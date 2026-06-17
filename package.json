@@ -1,6 +1,6 @@
 {
   "name": "aether-download",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Premium, High-Performance Internet Download Manager Alternative",
   "main": "dist/main/main.js",
   "scripts": {
