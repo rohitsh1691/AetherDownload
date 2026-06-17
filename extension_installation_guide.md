@@ -6,11 +6,12 @@ This guide provides step-by-step instructions on how to download and install the
 
 ## 🖥️ Desktop Downloader (.exe)
 
-For general users, the pre-built installer executable can be downloaded and installed directly from the repository's Releases page:
+For general users, the pre-built installer executable can be downloaded directly:
 
-1. Go to the repository's **[Releases](https://github.com/rohitsh1691/AetherDownload/releases)** page on GitHub.
-2. Under the latest version, download the **`AetherDownload Setup 1.0.0.exe`** installer.
-3. Double-click the downloaded `.exe` file to run the installer, and follow the setup wizard to install it on your computer.
+* **[Download AetherDownload Setup 1.0.0.exe](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Setup.1.0.0.exe)**
+* Or visit the repository's **[Releases Page](https://github.com/rohitsh1691/AetherDownload/releases)** to select other versions.
+
+Once downloaded, double-click the `.exe` file to run the installer, and follow the setup wizard to install it on your computer.
 
 ---
 
