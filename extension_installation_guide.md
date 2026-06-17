@@ -17,7 +17,12 @@ Once downloaded, double-click the `.exe` file to run the installer, and follow t
 
 ## 🌐 Google Chrome & Microsoft Edge
 
-### 📂 Location
+### 📥 Download (Optional)
+If you are downloading from the repository release page:
+* **[Download AetherDownload Chrome Extension (ZIP)](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Chrome.Extension.zip)**
+*(Download, extract the ZIP file to a folder, and load that folder in the browser).*
+
+### 📂 Repository Path (For Developers)
 * **Folder Path**: `D:\Movies\check\extension\`
 
 ### 🛠️ Installation Steps
@@ -27,15 +32,21 @@ Once downloaded, double-click the `.exe` file to run the installer, and follow t
    * **Edge**: Open `edge://extensions/`
 3. In the top-right corner, toggle **Developer mode** to **ON**.
 4. Click the **Load unpacked** button in the top-left corner.
-5. In the file picker, select the **`extension`** folder:
-   `D:\Movies\check\extension\`
+5. Select either:
+   * The folder you extracted from the **`AetherDownload.Chrome.Extension.zip`** file.
+   * The **`extension`** folder inside the cloned repository: `D:\Movies\check\extension\`
 6. The extension is now loaded and will automatically intercept downloads.
 
 ---
 
 ## 🦊 Mozilla Firefox
 
-### 📂 Location
+### 📥 Download (Optional)
+If you are downloading from the repository release page:
+* **[Download AetherDownload Firefox Extension (ZIP)](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Firefox.Extension.zip)**
+*(Download, extract the ZIP file to a folder, and load that folder's manifest in the browser).*
+
+### 📂 Repository Path (For Developers)
 * **Folder Path**: `D:\Movies\check\extension-firefox\`
 * *Note: This folder is automatically generated and updated by the build pipeline to comply with Firefox's Manifest V3 requirements.*
 
@@ -44,8 +55,9 @@ Once downloaded, double-click the `.exe` file to run the installer, and follow t
 2. In the address bar, type **`about:debugging`** and press **Enter**.
 3. Click on **This Firefox** in the left-hand sidebar.
 4. Click the **Load Temporary Add-on...** button.
-5. In the file explorer, navigate to the **`extension-firefox`** folder:
-   `D:\Movies\check\extension-firefox\`
+5. In the file explorer, navigate to:
+   * The folder you extracted from the **`AetherDownload.Firefox.Extension.zip`** file.
+   * Or the **`extension-firefox`** folder inside the cloned repository: `D:\Movies\check\extension-firefox\`
 6. Select the **`manifest.json`** file and click **Open**.
 7. Ensure localhost permissions are granted:
    * Go to **`about:addons`**.
