@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" class="logo-icon">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>AetherDownload</span>
+      </div>
+      <div class="badge" id="status-badge">Connecting</div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="info-row">
+      <span class="label">Integration Port</span>
+      <span class="val">9654</span>
+    </div>
+    
+    <div class="info-row">
+      <span class="label">Desktop Status</span>
+      <span class="val connection-status" id="desktop-status">Checking...</span>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="setting-toggle">
+      <div class="toggle-info">
+        <span class="toggle-title">Download Interception</span>
+        <span class="toggle-desc">Automatically catch file downloads</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="intercept-checkbox" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="footer">
+      AetherDownload Integration v1.0.0
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

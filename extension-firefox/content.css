@@ -1,0 +1,108 @@
+#aether-grabber-panel {
+  position: absolute;
+  z-index: 2147483647; /* Ensure it floats above all other elements */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+#aether-grabber-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(15, 23, 42, 0.85); /* Slate 900 with transparency */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #f8fafc; /* Slate 50 */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#aether-grabber-btn:hover {
+  background: rgba(30, 41, 59, 0.95); /* Slate 800 */
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  border-color: rgba(99, 102, 241, 0.5); /* Indigo 500 */
+}
+
+#aether-grabber-btn:active {
+  transform: translateY(1px);
+}
+
+.aether-icon {
+  animation: aether-bounce 2s infinite;
+}
+
+#aether-grabber-dropdown {
+  position: absolute;
+  right: 0;
+  top: 40px;
+  width: 260px;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  padding: 6px 0;
+  margin-top: 4px;
+  max-height: 250px;
+  overflow-y: auto;
+  transition: opacity 0.15s ease;
+}
+
+.aether-hide {
+  display: none !important;
+}
+
+.aether-dropdown-item {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 12px;
+  color: #e2e8f0; /* Slate 200 */
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.aether-dropdown-item:last-child {
+  border-bottom: none;
+}
+
+.aether-dropdown-item:hover {
+  background-color: rgba(99, 102, 241, 0.2); /* Transparent Indigo */
+}
+
+.aether-stream-format {
+  font-weight: 700;
+  color: #818cf8; /* Indigo 400 */
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+
+.aether-stream-url {
+  font-size: 11px;
+  color: #94a3b8; /* Slate 400 */
+  word-break: break-all;
+}
+
+.no-streams {
+  color: #94a3b8;
+  text-align: center;
+  padding: 12px;
+  cursor: default;
+}
+
+@keyframes aether-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
