@@ -116,6 +116,7 @@ export class DownloadEngine {
     };
 
     this.db.addDownload(item);
+    this.progressCallback(item);
     return item;
   }
 
@@ -129,6 +130,7 @@ export class DownloadEngine {
     item.status = 'downloading';
     item.errorMessage = undefined;
     this.db.updateDownload(id, { status: 'downloading', errorMessage: undefined });
+    this.progressCallback(item);
 
     try {
       const isHls = item.url.toLowerCase().includes('.m3u8');
@@ -204,6 +206,7 @@ export class DownloadEngine {
     }
 
     this.db.updateDownload(item.id, updatedInfo);
+    this.progressCallback(item);
 
     if (item.rangesSupported && item.totalBytes > 0) {
       const dir = path.dirname(item.savePath);
@@ -318,6 +321,7 @@ export class DownloadEngine {
         fileName: item.fileName,
         savePath: item.savePath
       });
+      this.progressCallback(item);
     }
 
     this.launchWorkers(item);
@@ -371,6 +375,7 @@ export class DownloadEngine {
         workersMap.set(seg.index, worker);
       });
       this.db.updateDownload(item.id, { segments: item.segments });
+      this.progressCallback(item);
     }
 
     activeInfo.speedInterval = setInterval(() => {
@@ -429,6 +434,7 @@ export class DownloadEngine {
     });
 
     this.db.updateDownload(itemId, { segments: item.segments });
+    this.progressCallback(item);
   }
 
   private handleWorkerMessage(itemId: string, segmentIndex: number, msg: any) {
