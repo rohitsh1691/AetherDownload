@@ -1,0 +1,58 @@
+{
+  "name": "aether-download",
+  "version": "1.0.0",
+  "description": "Premium, High-Performance Internet Download Manager Alternative",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "dev": "node scripts/build-firefox-ext.js && node scripts/dev.js",
+    "build": "node scripts/build-firefox-ext.js && tsc && vite build && electron-builder",
+    "compile": "tsc",
+    "electron:build": "electron-builder"
+  },
+  "keywords": [
+    "download-manager",
+    "idm",
+    "accelerator",
+    "downloader",
+    "multi-threaded"
+  ],
+  "author": "Rohit",
+  "license": "MIT",
+  "dependencies": {
+    "lucide-react": "^0.435.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.4",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "electron": "^32.0.1",
+    "electron-builder": "^24.13.3",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2"
+  },
+  "build": {
+    "appId": "com.aether.download",
+    "productName": "AetherDownload",
+    "directories": {
+      "output": "dist-installer"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "requestedExecutionLevel": "asInvoker"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AetherDownload"
+    }
+  }
+}

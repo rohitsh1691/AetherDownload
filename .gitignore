@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+
+# Build and compilation outputs
+dist/
+dist-installer/
+extension-firefox/
+
+# Agent configuration and tooling
+.antigravitycli/
+.vscode/
+.idea/
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# User screenshots and reference files (unnecessary files)
+*.png
+*.jpg
+*.jpeg
+*.pdf

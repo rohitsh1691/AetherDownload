@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "AetherDownload Integration Module",
+  "version": "1.0.0",
+  "description": "Integrates Chrome, Edge, and Firefox with the AetherDownload Desktop download manager.",
+  "permissions": [
+    "downloads",
+    "contextMenus",
+    "storage",
+    "activeTab",
+    "webRequest"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "http://localhost/*",
+    "http://127.0.0.1/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_title": "AetherDownload Integration",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "aetherdownload-integration@aether.manager",
+      "strict_min_version": "109.0"
+    }
+  }
+}
