@@ -4,7 +4,6 @@ node_modules/
 # Build and compilation outputs
 dist/
 dist-installer/
-extension-firefox/
 
 # Agent configuration and tooling
 .antigravitycli/

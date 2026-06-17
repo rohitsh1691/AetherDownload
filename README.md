@@ -21,7 +21,14 @@ AetherDownload is a modern, premium, high-performance internet download manager 
 To get started with AetherDownload, you will need to install both the **Desktop Downloader Application** and the **Browser Extension**.
 
 ### 1. Install the Desktop Downloader
-#### Building from Source
+
+#### 🚀 For General Users (Recommended)
+Download the pre-compiled Windows installer directly from the GitHub repository:
+1. Go to the **[Releases](https://github.com/rohitsh1691/AetherDownload/releases)** page on GitHub.
+2. Download the latest **`AetherDownload Setup 1.0.0.exe`** file.
+3. Run the installer to set up the manager on your computer.
+
+#### 🛠️ For Developers (Building from Source)
 Ensure you have [Node.js](https://nodejs.org/) installed, then follow these commands:
 
 1. Clone or download the repository.
