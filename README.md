@@ -23,10 +23,9 @@ To get started with AetherDownload, you will need to install both the **Desktop 
 ### 1. Install the Desktop Downloader
 
 #### 🚀 For General Users (Recommended)
-Download the pre-compiled Windows installer directly from the GitHub repository:
-1. Go to the **[Releases](https://github.com/rohitsh1691/AetherDownload/releases)** page on GitHub.
-2. Download the latest **`AetherDownload Setup 1.0.0.exe`** file.
-3. Run the installer to set up the manager on your computer.
+Download the pre-compiled Windows installer directly:
+* **[Download AetherDownload Setup 1.0.0.exe](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Setup.1.0.0.exe)**
+* Or visit the **[Releases Page](https://github.com/rohitsh1691/AetherDownload/releases)** for other versions.
 
 #### 🛠️ For Developers (Building from Source)
 Ensure you have [Node.js](https://nodejs.org/) installed, then follow these commands:
