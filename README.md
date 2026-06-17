@@ -51,18 +51,21 @@ Ensure you have [Node.js](https://nodejs.org/) installed, then follow these comm
 
 The extension integrates Chrome, Edge, and Firefox with the desktop application. Detailed paths and settings can be found in the [Extension Installation Guide](file:///D:/Movies/check/extension_installation_guide.md).
 
+* 🌐 **[Download AetherDownload Chrome Extension (ZIP)](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Chrome.Extension.zip)**
+* 🦊 **[Download AetherDownload Firefox Extension (ZIP)](https://github.com/rohitsh1691/AetherDownload/releases/download/v1.0.0/AetherDownload.Firefox.Extension.zip)**
+
 #### 🌐 Google Chrome & Microsoft Edge (Chromium-based)
 1. Open the Extensions management page (`chrome://extensions` or `edge://extensions`).
 2. Toggle **Developer mode** (top-right corner) to **ON**.
 3. Click the **Load unpacked** button.
-4. Select the **`extension/`** folder inside the project directory.
+4. Select the folder extracted from the ZIP file (or the **`extension/`** folder inside the cloned project directory).
 
 #### 🦊 Mozilla Firefox
-Firefox requires a specific manifest format that excludes Chromium's `service_worker`. A Firefox-compatible package is automatically generated under `extension-firefox/` during the build process.
+Firefox requires a specific manifest format that excludes Chromium's `service_worker`.
 1. Open Firefox and enter **`about:debugging`** in the address bar.
 2. Click **This Firefox** on the left sidebar.
 3. Click **Load Temporary Add-on...**
-4. Select the **`manifest.json`** inside the **`extension-firefox/`** folder.
+4. Select the **`manifest.json`** inside the folder extracted from the ZIP file (or the **`extension-firefox/`** folder inside the cloned project directory).
 5. In **`about:addons`**, select the extension, go to the **Permissions** tab, and verify that localhost/loopback access is toggled **ON**.
 
 ---
